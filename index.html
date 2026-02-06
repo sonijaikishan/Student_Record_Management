@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="student-style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <h1>Student Registration Form</h1>
+            <p class="subtitle">Please fill in all the required information</p>
+
+            <form id="studentForm">
+                <!-- Name Field -->
+                <div class="form-group">
+                    <label for="name">Full Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <!-- Roll Number Field -->
+                <div class="form-group">
+                    <label for="rollNumber">Roll Number <span class="required">*</span></label>
+                    <input type="text" id="rollNumber" name="rollNumber" placeholder="Enter your roll number" required>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="email">E-mail <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="yourname@example.com" required>
+                </div>
+
+                <!-- Password Field -->
+                <div class="form-group">
+                    <label for="password">Password <span class="required">*</span></label>
+                    <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+                </div>
+
+                <!-- Gender Field (Radio Buttons) -->
+                <div class="form-group">
+                    <label>Gender <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="male" required>
+                            <span>Male</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="female">
+                            <span>Female</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="other">
+                            <span>Other</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Course Selection (Dropdown) -->
+                <div class="form-group">
+                    <label for="course">Course <span class="required">*</span></label>
+                    <select id="course" name="course" required>
+                        <option value="">-- Select a Course --</option>
+                        <option value="computer-science">Computer Science</option>
+                        <option value="information-technology">Information Technology</option>
+                        <option value="electronics">Electronics Engineering</option>
+                        <option value="mechanical">Mechanical Engineering</option>
+                        <option value="civil">Civil Engineering</option>
+                        <option value="business">Business Administration</option>
+                        <option value="arts">Arts & Humanities</option>
+                    </select>
+                </div>
+
+                <!-- Hobbies (Checkboxes) -->
+                <div class="form-group">
+                    <label>Hobbies</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="hobbies" value="reading">
+                            <span>Reading</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="hobbies" value="sports">
+                            <span>Sports</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="hobbies" value="music">
+                            <span>Music</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="hobbies" value="gaming">
+                            <span>Gaming</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="hobbies" value="painting">
+                            <span>Painting</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="hobbies" value="coding">
+                            <span>Coding</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Address Field -->
+                <div class="form-group">
+                    <label for="address">Address <span class="required">*</span></label>
+                    <textarea id="address" name="address" rows="4" placeholder="Enter your complete address"
+                        required></textarea>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="button-group">
+                    <button type="submit" class="btn btn-submit">Submit</button>
+                    <button type="reset" class="btn btn-clear">Clear</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="student-script.js"></script>
+</body>
+
+</html>
